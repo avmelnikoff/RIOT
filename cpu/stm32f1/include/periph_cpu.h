@@ -83,13 +83,11 @@ enum {
 
 /**
  * @brief   Define alternate function modes
- *
- * On this CPU, only the output pins have alternate function modes. The input
- * pins have to be configured using the default gpio_init() function.
  */
 typedef enum {
-    GPIO_AF_OUT_PP = 0xb,   /**< alternate function output - push-pull */
-    GPIO_AF_OUT_OD = 0xf,   /**< alternate function output - open-drain */
+    GPIO_AF_IN_ANALOG = 0x0, /**< configure pin as analog input */
+    GPIO_AF_OUT_PP = 0xb,    /**< alternate function output - push-pull */
+    GPIO_AF_OUT_OD = 0xf,    /**< alternate function output - open-drain */
 } gpio_af_out_t;
 
 /**
