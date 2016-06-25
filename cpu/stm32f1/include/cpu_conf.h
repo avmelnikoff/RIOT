@@ -27,6 +27,8 @@
 
 #if defined(CPU_MODEL_STM32F103CB) || defined(CPU_MODEL_STM32F103RB)
 #include "stm32f103xb.h"
+#elif defined(CPU_MODEL_STM32F103C8)
+#include "stm32f103x8.h"
 #elif defined(CPU_MODEL_STM32F103RE)
 #include "stm32f103xe.h"
 #endif
